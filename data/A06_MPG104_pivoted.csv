@@ -1,0 +1,105 @@
+Model,Class,Cylinders,Year,MPG
+audi a4,compact,4Cyl,Year_2010,29
+audi a4,compact,4Cyl,Year_2020,31
+audi a4,compact,6Cyl,Year_2010,26
+audi a4,compact,6Cyl,Year_2020,27
+audi a4 quattro,compact,4Cyl,Year_2010,26
+audi a4 quattro,compact,4Cyl,Year_2020,28
+audi a4 quattro,compact,6Cyl,Year_2010,25
+audi a4 quattro,compact,6Cyl,Year_2020,25
+audi a6 quattro,midsize,6Cyl,Year_2010,24
+audi a6 quattro,midsize,6Cyl,Year_2020,25
+chevrolet c1500 suburban 2wd,suv,8Cyl,Year_2010,17
+chevrolet c1500 suburban 2wd,suv,8Cyl,Year_2020,20
+chevrolet k1500 tahoe 4wd,suv,8Cyl,Year_2010,15
+chevrolet k1500 tahoe 4wd,suv,8Cyl,Year_2020,19
+chevrolet malibu,midsize,4Cyl,Year_2010,27
+chevrolet malibu,midsize,4Cyl,Year_2020,30
+chevrolet malibu,midsize,6Cyl,Year_2010,26
+chevrolet malibu,midsize,6Cyl,Year_2020,29
+dodge caravan 2wd,minivan,6Cyl,Year_2010,24
+dodge caravan 2wd,minivan,6Cyl,Year_2020,24
+dodge dakota pickup 4wd,pickup,6Cyl,Year_2010,17
+dodge dakota pickup 4wd,pickup,6Cyl,Year_2020,18
+dodge dakota pickup 4wd,pickup,8Cyl,Year_2010,18
+dodge dakota pickup 4wd,pickup,8Cyl,Year_2020,19
+dodge durango 4wd,suv,8Cyl,Year_2010,16
+dodge durango 4wd,suv,8Cyl,Year_2020,17
+dodge ram 1500 pickup 4wd,pickup,8Cyl,Year_2010,15
+dodge ram 1500 pickup 4wd,pickup,8Cyl,Year_2020,16
+ford expedition 2wd,suv,8Cyl,Year_2010,17
+ford expedition 2wd,suv,8Cyl,Year_2020,18
+ford explorer 4wd,suv,6Cyl,Year_2010,17
+ford explorer 4wd,suv,6Cyl,Year_2020,19
+ford explorer 4wd,suv,8Cyl,Year_2010,17
+ford explorer 4wd,suv,8Cyl,Year_2020,19
+ford f150 pickup 4wd,pickup,8Cyl,Year_2010,16
+ford f150 pickup 4wd,pickup,8Cyl,Year_2020,17
+ford mustang,subcompact,6Cyl,Year_2010,26
+ford mustang,subcompact,6Cyl,Year_2020,26
+ford mustang,subcompact,8Cyl,Year_2010,21
+ford mustang,subcompact,8Cyl,Year_2020,23
+honda civic,subcompact,4Cyl,Year_2010,33
+honda civic,subcompact,4Cyl,Year_2020,34
+hyundai sonata,midsize,4Cyl,Year_2010,26
+hyundai sonata,midsize,4Cyl,Year_2020,30
+hyundai sonata,midsize,6Cyl,Year_2010,26
+hyundai sonata,midsize,6Cyl,Year_2020,28
+hyundai tiburon,subcompact,4Cyl,Year_2010,26
+hyundai tiburon,subcompact,4Cyl,Year_2020,28
+jeep grand cherokee 4wd,suv,6Cyl,Year_2010,20
+jeep grand cherokee 4wd,suv,6Cyl,Year_2020,22
+jeep grand cherokee 4wd,suv,8Cyl,Year_2010,17
+jeep grand cherokee 4wd,suv,8Cyl,Year_2020,12
+land rover range rover,suv,8Cyl,Year_2010,15
+land rover range rover,suv,8Cyl,Year_2020,18
+lincoln navigator 2wd,suv,8Cyl,Year_2010,17
+lincoln navigator 2wd,suv,8Cyl,Year_2020,18
+mercury mountaineer 4wd,suv,6Cyl,Year_2010,17
+mercury mountaineer 4wd,suv,6Cyl,Year_2020,19
+mercury mountaineer 4wd,suv,8Cyl,Year_2010,17
+mercury mountaineer 4wd,suv,8Cyl,Year_2020,19
+nissan altima,compact,4Cyl,Year_2010,29
+nissan altima,compact,4Cyl,Year_2020,30
+nissan altima,midsize,4Cyl,Year_2010,30
+nissan altima,midsize,4Cyl,Year_2020,31
+nissan maxima,midsize,6Cyl,Year_2010,26
+nissan maxima,midsize,6Cyl,Year_2020,25
+nissan pathfinder 4wd,suv,6Cyl,Year_2010,17
+nissan pathfinder 4wd,suv,6Cyl,Year_2020,20
+pontiac grand prix,midsize,6Cyl,Year_2010,26
+pontiac grand prix,midsize,6Cyl,Year_2020,28
+subaru forester awd,suv,4Cyl,Year_2010,25
+subaru forester awd,suv,4Cyl,Year_2020,27
+subaru impreza awd,subcompact,4Cyl,Year_2010,26
+subaru impreza awd,subcompact,4Cyl,Year_2020,27
+subaru impreza awd,compact,4Cyl,Year_2010,24
+subaru impreza awd,compact,4Cyl,Year_2020,25
+toyota 4runner 4wd,suv,6Cyl,Year_2010,19
+toyota 4runner 4wd,suv,6Cyl,Year_2020,20
+toyota camry,midsize,4Cyl,Year_2010,29
+toyota camry,midsize,4Cyl,Year_2020,31
+toyota camry,midsize,6Cyl,Year_2010,26
+toyota camry,midsize,6Cyl,Year_2020,28
+toyota camry solara,compact,4Cyl,Year_2010,27
+toyota camry solara,compact,4Cyl,Year_2020,31
+toyota camry solara,compact,6Cyl,Year_2010,26
+toyota camry solara,compact,6Cyl,Year_2020,27
+toyota corolla,compact,4Cyl,Year_2010,30
+toyota corolla,compact,4Cyl,Year_2020,37
+toyota land cruiser wagon 4wd,suv,8Cyl,Year_2010,15
+toyota land cruiser wagon 4wd,suv,8Cyl,Year_2020,18
+toyota toyota tacoma 4wd,pickup,4Cyl,Year_2010,20
+toyota toyota tacoma 4wd,pickup,4Cyl,Year_2020,22
+toyota toyota tacoma 4wd,pickup,6Cyl,Year_2010,17
+toyota toyota tacoma 4wd,pickup,6Cyl,Year_2020,18
+volkswagen gti,compact,4Cyl,Year_2010,29
+volkswagen gti,compact,4Cyl,Year_2020,29
+volkswagen jetta,compact,4Cyl,Year_2010,44
+volkswagen jetta,compact,4Cyl,Year_2020,45
+volkswagen new beetle,subcompact,4Cyl,Year_2010,44
+volkswagen new beetle,subcompact,4Cyl,Year_2020,45
+volkswagen passat,midsize,4Cyl,Year_2010,29
+volkswagen passat,midsize,4Cyl,Year_2020,28
+volkswagen passat,midsize,6Cyl,Year_2010,26
+volkswagen passat,midsize,6Cyl,Year_2020,26

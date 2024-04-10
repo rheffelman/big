@@ -1,0 +1,103 @@
+Model,Year,MPG,Class,Cylinders
+audi a4,2010,29,compact,4Cyl
+audi a4,2020,31,compact,4Cyl
+audi a4,2010,26,compact,6Cyl
+audi a4,2020,27,compact,6Cyl
+audi a4 quattro,2010,26,compact,4Cyl
+audi a4 quattro,2020,28,compact,4Cyl
+audi a4 quattro,2010,25,compact,6Cyl
+audi a4 quattro,2020,25,compact,6Cyl
+audi a6 quattro,2010,24,midsize,6Cyl
+audi a6 quattro,2020,25,midsize,6Cyl
+chevrolet c1500 suburban 2wd,2010,17,suv,8Cyl
+chevrolet c1500 suburban 2wd,2020,20,suv,8Cyl
+chevrolet k1500 tahoe 4wd,2010,15,suv,8Cyl
+chevrolet k1500 tahoe 4wd,2020,19,suv,8Cyl
+chevrolet malibu,2010,27,midsize,4Cyl
+chevrolet malibu,2020,30,midsize,4Cyl
+chevrolet malibu,2010,26,midsize,6Cyl
+chevrolet malibu,2020,29,midsize,6Cyl
+dodge dakota pickup 4wd,2010,17,pickup,6Cyl
+dodge dakota pickup 4wd,2020,18,pickup,6Cyl
+dodge dakota pickup 4wd,2010,18,pickup,8Cyl
+dodge dakota pickup 4wd,2020,19,pickup,8Cyl
+dodge durango 4wd,2010,16,suv,8Cyl
+dodge durango 4wd,2020,17,suv,8Cyl
+dodge ram 1500 pickup 4wd,2010,15,pickup,8Cyl
+dodge ram 1500 pickup 4wd,2020,16,pickup,8Cyl
+ford expedition 2wd,2010,17,suv,8Cyl
+ford expedition 2wd,2020,18,suv,8Cyl
+ford explorer 4wd,2010,17,suv,6Cyl
+ford explorer 4wd,2020,19,suv,6Cyl
+ford explorer 4wd,2010,17,suv,8Cyl
+ford explorer 4wd,2020,19,suv,8Cyl
+ford f150 pickup 4wd,2010,16,pickup,8Cyl
+ford f150 pickup 4wd,2020,17,pickup,8Cyl
+ford mustang,2010,26,subcompact,6Cyl
+ford mustang,2020,26,subcompact,6Cyl
+ford mustang,2010,21,subcompact,8Cyl
+ford mustang,2020,23,subcompact,8Cyl
+honda civic,2010,33,subcompact,4Cyl
+honda civic,2020,34,subcompact,4Cyl
+hyundai sonata,2010,26,midsize,4Cyl
+hyundai sonata,2020,30,midsize,4Cyl
+hyundai sonata,2010,26,midsize,6Cyl
+hyundai sonata,2020,28,midsize,6Cyl
+hyundai tiburon,2010,26,subcompact,4Cyl
+hyundai tiburon,2020,28,subcompact,4Cyl
+jeep grand cherokee 4wd,2010,20,suv,6Cyl
+jeep grand cherokee 4wd,2020,22,suv,6Cyl
+jeep grand cherokee 4wd,2010,17,suv,8Cyl
+jeep grand cherokee 4wd,2020,12,suv,8Cyl
+land rover range rover,2010,15,suv,8Cyl
+land rover range rover,2020,18,suv,8Cyl
+lincoln navigator 2wd,2010,17,suv,8Cyl
+lincoln navigator 2wd,2020,18,suv,8Cyl
+mercury mountaineer 4wd,2010,17,suv,6Cyl
+mercury mountaineer 4wd,2020,19,suv,6Cyl
+mercury mountaineer 4wd,2010,17,suv,8Cyl
+mercury mountaineer 4wd,2020,19,suv,8Cyl
+nissan altima,2010,29,compact,4Cyl
+nissan altima,2020,30,compact,4Cyl
+nissan altima,2010,30,midsize,4Cyl
+nissan altima,2020,31,midsize,4Cyl
+nissan maxima,2010,26,midsize,6Cyl
+nissan maxima,2020,25,midsize,6Cyl
+nissan pathfinder 4wd,2010,17,suv,6Cyl
+nissan pathfinder 4wd,2020,20,suv,6Cyl
+pontiac grand prix,2010,26,midsize,6Cyl
+pontiac grand prix,2020,28,midsize,6Cyl
+subaru forester awd,2010,25,suv,4Cyl
+subaru forester awd,2020,27,suv,4Cyl
+subaru impreza awd,2010,26,subcompact,4Cyl
+subaru impreza awd,2020,27,subcompact,4Cyl
+subaru impreza awd,2010,24,compact,4Cyl
+subaru impreza awd,2020,25,compact,4Cyl
+toyota 4runner 4wd,2010,19,suv,6Cyl
+toyota 4runner 4wd,2020,20,suv,6Cyl
+toyota camry,2010,29,midsize,4Cyl
+toyota camry,2020,31,midsize,4Cyl
+toyota camry,2010,26,midsize,6Cyl
+toyota camry,2020,28,midsize,6Cyl
+toyota camry solara,2010,27,compact,4Cyl
+toyota camry solara,2020,31,compact,4Cyl
+toyota camry solara,2010,26,compact,6Cyl
+toyota camry solara,2020,27,compact,6Cyl
+toyota corolla,2010,30,compact,4Cyl
+toyota corolla,2020,37,compact,4Cyl
+toyota land cruiser wagon 4wd,2010,15,suv,8Cyl
+toyota land cruiser wagon 4wd,2020,18,suv,8Cyl
+toyota toyota tacoma 4wd,2010,20,pickup,4Cyl
+toyota toyota tacoma 4wd,2020,22,pickup,4Cyl
+toyota toyota tacoma 4wd,2010,17,pickup,6Cyl
+toyota toyota tacoma 4wd,2020,18,pickup,6Cyl
+volkswagen gti,2010,29,compact,4Cyl
+volkswagen gti,2020,29,compact,4Cyl
+volkswagen jetta,2010,44,compact,4Cyl
+volkswagen jetta,2020,45,compact,4Cyl
+volkswagen new beetle,2010,44,subcompact,4Cyl
+volkswagen new beetle,2020,45,subcompact,4Cyl
+volkswagen passat,2010,29,midsize,4Cyl
+volkswagen passat,2020,28,midsize,4Cyl
+volkswagen passat,2010,26,midsize,6Cyl
+volkswagen passat,2020,26,midsize,6Cyl

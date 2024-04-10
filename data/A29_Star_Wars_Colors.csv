@@ -1,0 +1,88 @@
+name,skin_color,eye_color,hair_color,species,sex
+Luke Skywalker,fair,blue,blond,Human,male
+C-3PO,gold,yellow,NA,Droid,none
+R2-D2,"white, blue",red,NA,Droid,none
+Darth Vader,white,yellow,none,Human,male
+Leia Organa,light,brown,brown,Human,female
+Owen Lars,light,blue,"brown, grey",Human,male
+Zam Wesell,light,blue,brown,Human,female
+R5-D4,"white, red",red,NA,Droid,none
+Biggs Darklighter,light,brown,black,Human,male
+Obi-Wan Kenobi,fair,blue-gray,"auburn, white",Human,male
+Anakin Skywalker,fair,blue,blond,Human,male
+Wilhuff Tarkin,fair,blue,"auburn, grey",Human,male
+Chewbacca,unknown,blue,brown,Wookiee,male
+Han Solo,fair,brown,brown,Human,male
+Greedo,green,black,NA,Rodian,male
+Jabba,"green-tan, brown",orange,NA,Hutt,hermaphroditic
+Wedge Antilles,fair,hazel,brown,Human,male
+Jek Tono Porkins,fair,blue,brown,Human,male
+Yoda,green,brown,white,Yoda's species,male
+Palpatine,pale,yellow,grey,Human,male
+Boba Fett,fair,brown,black,Human,male
+IG-88,metal,red,none,Droid,none
+Bossk,green,red,none,Trandoshan,male
+Lando Calrissian,dark,brown,black,Human,male
+Lobot,light,blue,none,Human,male
+Ackbar,brown mottle,orange,none,Mon Calamari,male
+Mon Mothma,fair,blue,auburn,Human,female
+Arvel Crynyd,fair,brown,brown,Human,male
+Wicket Systri Warrick,brown,brown,brown,Ewok,male
+Nien Nunb,grey,black,none,Sullustan,male
+Qui-Gon Jinn,fair,blue,brown,Human,male
+Nute Gunray,mottled green,red,none,Neimodian,male
+Finis Valorum,fair,blue,blond,Human,male
+Jar Jar Binks,orange,orange,none,Gungan,male
+Roos Tarpals,grey,orange,none,Gungan,male
+Rugor Nass,green,orange,none,Gungan,male
+Ric Olie,fair,blue,brown,NA,NA
+Watto,"blue, grey",yellow,black,Toydarian,male
+Sebulba,"grey, red",orange,none,Dug,male
+Quarsh Panaka,dark,brown,black,NA,NA
+Shmi Skywalker,fair,brown,black,Human,female
+Darth Maul,red,yellow,none,Zabrak,male
+Bib Fortuna,pale,pink,none,Twi'lek,male
+Ayla Secura,blue,hazel,none,Twi'lek,female
+Dud Bolt,"blue, grey",yellow,none,Vulptereen,male
+Gasgano,"white, blue",black,none,Xexto,male
+Ben Quadinaros,"grey, green, yellow",orange,none,Toong,male
+Mace Windu,dark,brown,none,Human,male
+Ki-Adi-Mundi,pale,yellow,white,Cerean,male
+Kit Fisto,green,black,none,Nautolan,male
+Eeth Koth,brown,brown,black,Zabrak,male
+Adi Gallia,dark,blue,none,Tholothian,female
+Saesee Tiin,pale,orange,none,Iktotchi,male
+Yarael Poof,white,yellow,none,Quermian,male
+Plo Koon,orange,black,none,Kel Dor,male
+Mas Amedda,blue,blue,none,Chagrian,male
+Gregar Typho,dark,brown,black,Human,male
+Corde,light,brown,brown,Human,female
+Cliegg Lars,fair,blue,brown,Human,male
+Poggle the Lesser,green,yellow,none,Geonosian,male
+Luminara Unduli,yellow,blue,black,Mirialan,female
+Barriss Offee,yellow,blue,black,Mirialan,female
+Dorme,light,brown,brown,Human,female
+Dooku,fair,brown,white,Human,male
+Bail Prestor Organa,tan,brown,black,Human,male
+Jango Fett,tan,brown,black,Human,male
+Zam Wesell,"fair, green, yellow",yellow,blonde,Clawdite,female
+Dexter Jettster,brown,yellow,none,Besalisk,male
+Lama Su,grey,black,none,Kaminoan,male
+Taun We,grey,black,none,Kaminoan,female
+Jocasta Nu,fair,blue,white,Human,female
+Ratts Tyerell,"grey, blue",unknown,none,Aleena,male
+R4-P17,"silver, red","red, blue",none,Droid,none
+Wat Tambor,"green, grey",unknown,none,Skakoan,male
+San Hill,grey,gold,none,Muun,male
+Shaak Ti,"red, blue, white",black,none,Togruta,female
+Grievous,"brown, white","green, yellow",none,Kaleesh,male
+Tarfful,brown,blue,brown,Wookiee,male
+Raymus Antilles,light,brown,brown,Human,male
+Sly Moore,pale,white,none,NA,NA
+Tion Medon,grey,black,none,Pau'an,male
+Finn,dark,dark,black,Human,male
+Rey,light,hazel,brown,Human,female
+Poe Dameron,light,brown,brown,Human,male
+BB8,none,black,none,Droid,none
+Captain Phasma,unknown,unknown,unknown,NA,NA
+Padme Amidala,light,brown,brown,Human,female

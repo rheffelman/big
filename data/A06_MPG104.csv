@@ -1,0 +1,53 @@
+Model,Year_2010,Year_2020,class,Cylinders,Code
+audi a4,29,31,compact,4Cyl,658
+audi a4,26,27,compact,6Cyl,198
+audi a4 quattro,26,28,compact,4Cyl,209
+audi a4 quattro,25,25,compact,6Cyl,804
+audi a6 quattro,24,25,midsize,6Cyl,680
+chevrolet c1500 suburban 2wd,17,20,suv,8Cyl,313
+chevrolet k1500 tahoe 4wd,15,19,suv,8Cyl,632
+chevrolet malibu,27,30,midsize,4Cyl,303
+chevrolet malibu,26,29,midsize,6Cyl,666
+dodge caravan 2wd,24,24,minivan,6Cyl,545
+dodge dakota pickup 4wd,17,18,pickup,6Cyl,848
+dodge dakota pickup 4wd,18,19,pickup,8Cyl,572
+dodge durango 4wd,16,17,suv,8Cyl,177
+dodge ram 1500 pickup 4wd,15,16,pickup,8Cyl,112
+ford expedition 2wd,17,18,suv,8Cyl,234
+ford explorer 4wd,17,19,suv,6Cyl,428
+ford explorer 4wd,17,19,suv,8Cyl,487
+ford f150 pickup 4wd,16,17,pickup,8Cyl,595
+ford mustang,26,26,subcompact,6Cyl,293
+ford mustang,21,23,subcompact,8Cyl,720
+honda civic,33,34,subcompact,4Cyl,520
+hyundai sonata,26,30,midsize,4Cyl,299
+hyundai sonata,26,28,midsize,6Cyl,693
+hyundai tiburon,26,28,subcompact,4Cyl,936
+jeep grand cherokee 4wd,20,22,suv,6Cyl,580
+jeep grand cherokee 4wd,17,12,suv,8Cyl,212
+land rover range rover,15,18,suv,8Cyl,835
+lincoln navigator 2wd,17,18,suv,8Cyl,646
+mercury mountaineer 4wd,17,19,suv,6Cyl,298
+mercury mountaineer 4wd,17,19,suv,8Cyl,372
+nissan altima,29,30,compact,4Cyl,366
+nissan altima,30,31,midsize,4Cyl,688
+nissan maxima,26,25,midsize,6Cyl,354
+nissan pathfinder 4wd,17,20,suv,6Cyl,336
+pontiac grand prix,26,28,midsize,6Cyl,480
+subaru forester awd,25,27,suv,4Cyl,598
+subaru impreza awd,26,27,subcompact,4Cyl,655
+subaru impreza awd,24,25,compact,4Cyl,812
+toyota 4runner 4wd,19,20,suv,6Cyl,940
+toyota camry,29,31,midsize,4Cyl,406
+toyota camry,26,28,midsize,6Cyl,573
+toyota camry solara,27,31,compact,4Cyl,964
+toyota camry solara,26,27,compact,6Cyl,790
+toyota corolla,30,37,compact,4Cyl,191
+toyota land cruiser wagon 4wd,15,18,suv,8Cyl,191
+toyota toyota tacoma 4wd,20,22,pickup,4Cyl,368
+toyota toyota tacoma 4wd,17,18,pickup,6Cyl,885
+volkswagen gti,29,29,compact,4Cyl,140
+volkswagen jetta,44,45,compact,4Cyl,500
+volkswagen new beetle,44,45,subcompact,4Cyl,693
+volkswagen passat,29,28,midsize,4Cyl,311
+volkswagen passat,26,26,midsize,6Cyl,823
