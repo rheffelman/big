@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title: SOP LaTeX Template
+%% Author: Soonho Kong / soonhok@cs.cmu.edu
+%% Created: 2012-11-12
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Requirement:
+%%     You need to have the `Adobe Caslon Pro` font family.
+%%     For more information, please visit:
+%%     http://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-US&event=displayFontPackage&code=1712
+%%
+%% How to Compile:
+%%     $ xelatex main.tex
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[letterpaper,margin=0.5in,noheadfoot]{geometry}
+\usepackage{fontspec, color, enumerate, sectsty}
+\usepackage[normalem]{ulem}
+\usepackage{setspace}
+\setstretch{1.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      YOUR INFORMATION
+%
+%      PLEASE EDIT THE FOLLOWING LINES ACCORDINGLY!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\soptitle}{Statement of Purpose}
+\newcommand{\yourname}{Ryan Heffelman}
+\newcommand{\youremail}{rheffelman@carthage.edu}
+
+%% FONTS SETUP
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Path = fonts/, Ligatures={Common}]{adobe_caslon_pro}
+\setmonofont[Path = fonts/, Scale=0.8]{monaco}
+\setsansfont[Path = fonts/, Scale=0.9]{Optima-Regular}
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&~{}}}
+\usepackage[bookmarks, colorlinks, breaklinks,
+pdftitle={\yourname - \soptitle},pdfauthor={\yourname}, unicode]{hyperref}
+\hypersetup{linkcolor=magneta,citecolor=magenta,filecolor=magenta,urlcolor=[named]{WildStrawberry}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Title and Author Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}{\huge \scshape \soptitle}\end{center}
+\begin{center}\vspace{0.2em} {\Large \yourname\\}
+  {\youremail}\end{center}
+
+\section*{Why This Program Appeals To Me}
+
+\paragraph{}
+
+I’m a passionate and driven student in computer science and data science from a small college in Wisconsin. I’m looking to increase my breadth of knowledge and experience in the field by any means necessary, and the HCII program at CMU seems like an excellent place to do just that. When my professor recommended this program to me I excitedly scrolled through the list of projects. I found myself incredibly interested in most of the projects you guys have to offer– it was hard to narrow down my choice to just three! I found this research opportunity highly appealing because I have a strong passion for the broader field of computer science, and the subject matter of many of your research projects are truly fascinating to me. In addition, my professor– someone who I respect and trust greatly– personally recommended this program to me.
+
+\section*{Future Goals}
+
+\paragraph{}
+
+My goals are inexact but all point in a certain direction; I know what I want to do but I don’t know \textit{exactly} what I want to do. I have my heart set on computer science, but it’s an incredibly broad discipline: I’m not quite sure exactly what type of computer scientist I’d like to become. Try as I might, I cannot realistically learn all there is to know about the field, or really even get close. That is why it is my philosophy to limit myself to specific domains within computer science, to subset my pursuit of an unknowably vast overarching domain into an achievably smaller subdomain such as cybersecurity specialist, web developer, AI specialist, etc. That is where I believe this program would help me support my goals, in helping me determine more exactly what it is that I want to do. I’m admittedly naive, not for a lack of trying, but because that’s the existential nature of being a 20 year old undergraduate student, thus I cannot make concrete statements about my interests. I’m however eager to learn and itching to give a rigorous and fair shot to those concepts and fields that fascinate me in theory, I’m hoping this research opportunity will scratch that itch for me.
+
+\section*{Accomplishments I'm Proud Of}
+
+\paragraph{}
+
+The first thing that comes to mind is my academic performance so far in college, maintaining a 4.0 major GPA in my majors, both of which being majors that are stereotypically difficult. Early in my life I had struggled academically because my interests were elsewhere. I have Aspergers syndrome and as a kid that meant shining extraordinarily bright in certain areas that I was interested in and neglecting all others. Instead of putting my effort into what my school wanted me to, I'd put it into getting faster at solving a Rubik's cube, or getting good at table tennis, or perfecting complex drum rhythms, each of my obsessions ultimately becoming their own accomplishments deserving of their own paragraphs. I'm particularly proud of my recent academic performance because it proves something that had often been suspected of me throughout my education: I was never dumb, just uninterested. When my interests align with what my school wants from me, I thrive, relative not only to my past-self but to all of my peers as well-- I am 3 semesters in yet 6 courses deep into the computer science major (which is highly unusual for my school).
+
+\section*{What Types of Projects Interest Me And Why}
+
+\paragraph{}
+
+The greatest role-models throughout my life have been computer scientists, my father, my sister, and several of my greatest friends. This has instilled in my value system a great interest in the more ``pure'' side of computer science: computation, artificial intelligence, algorithmic problem solving, etc, as well as an interest in the field as a whole. 
+
+\paragraph{}
+
+Out of curiosity in my freshman year I took a data science course, and due to my excellent professor's materials, personality, and course structure, I was hooked. I declared it as another major and acquired a particular interest in the data science side of things. It's likely that I'll find any project with a data science edge interesting. 
+
+\paragraph{}
+
+For a time I was very passionate about a certain video game, and ended up playing it at a very high level. I bring it up because this particular game had an entirely customizable user interface, and at high levels the way in which you configure your UI was an extremely large yet often overlooked part of the skill expression in the game at the highest level. I spent a lot of my time in this game creating, optimizing, and refining my UI in a way to improve functionality and performance in a personalized manner. I learned to use UI as a tool to interface between myself and the game effectively. This experience changed the way I see the digital world. As ridiculous as it sounds I often run into bad UI and it makes me \textit{truly} sad. If it makes one persons life a little harder than it needs to be, multiplied by the \textit{millions} of users and interactions that some of these sites and applications have, then you end up with a legitimately very significant amount of real suffering that could've been avoided. In summary I have a passion for UI because of my experience with a video game, and I'd likely be interested in any kind of project relating to UI.
+
+
+
+\end{document}

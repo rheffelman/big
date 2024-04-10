@@ -1,0 +1,67 @@
+\documentclass[16pt]{article}
+\usepackage[margin=0.7in]{geometry} 
+\usepackage{amsmath, amsthm, amssymb, mathrsfs, graphicx, mathtools, tikz, hyperref, enumitem}
+\usetikzlibrary{positioning}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cx}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\hypersetup{colorlinks, linkcolor=blue}
+
+\newcounter{itemnumber}
+
+\begin{document}
+\large
+\date{}
+\title{\Large Assignment 4 Part 1 \\ Ryan Heffelman \\ February 25^\(th\), 2024 \\ MTH 1240 \\ Sara Jensen}
+\maketitle
+\begin{enumerate}
+    \item[\textbf{1.3}]
+    \item[]
+    \begin{enumerate}
+        \item[\textbf{\#2}] $\{\}, \{1\}, \{2\}, \{1, 2\}$
+        \item[\textbf{\#7}] $\{\}, \{\mathbb{R}\}, \{\{\mathbb{Q}, \mathbb{N}\}\}, \{\mathbb{R}, \{\mathbb{Q}, \mathbb{N}\}\}$
+        \item[\textbf{\#9}] $\{3, 2\}, \{3, a\}, \{2, a\}$
+        \item[\textbf{\#11}] $\emptyset$
+        \item[\textbf{\#15}] True. Solutions for $x^2 - x = 0$ are (0, 0) and (1, 0), we'll call this set of points set $B$. Solutions for $x - 1 = 0$ are (1, 0), we'll call this set of points $A$. $A \subseteq B$ = True because all elements in $A$ are in $B$. 
+        \item[\textbf{\#16}] False. Using the same set definitions as \#15, While $A \subseteq B$, $B \nsubseteq A$. For instance, $(0, 0) \in B$ but $(0, 0) \notin A$.
+    \end{enumerate}
+
+    \item[\textbf{1.4}]
+    \item[]
+    \begin{enumerate}
+        \item[\textbf{\#10}] $\{\{\}, \{1\}, \{2\}, \{3\}\}$
+        \item[\textbf{\#11}] $\{\{\}, \{\{\}\}, \{\{1\}\}, \{\{2\}\}, \{\{3\}\}, \{\{1, 2\}\}, \{\{1, 3\}\}, \{\{2, 3\}\}, \{\{1, 2, 3\}\}\}$ \\ this wouldve been a million times easier if \{'s and \}'s didn't require an escape character in LaTeX. Or if I just didn't do this in LaTeX but that's beyond the point.
+        \item[\textbf{\#14}] $\vert \mathscr{P}(\mathscr{P}(A))\vert =$ 2^\((2^m)\)
+        \item[\textbf{\#15}] $\vert \mathscr{P}(A \times B)\vert$ = 2^\(mn\)
+        \item[\textbf{\#16}] $\vert \mathscr{P}(A) \times \mathscr{P}(B)\vert$ = $2^m \cdot 2^n$
+        \item[\textbf{\#17}] $m + 1$. tricky. it's offset by 1 because of the null set.
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,161 @@
+\documentclass[16pt]{article}
+\usepackage[margin=0.7in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,graphicx,mathtools,tikz,hyperref, enumitem}
+\usetikzlibrary{positioning}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cx}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\hypersetup{colorlinks, linkcolor=blue}
+
+\newcounter{itemnumber}
+
+\begin{document}
+\large
+\date{}
+\title{\Large Assignment 1 \\ Ryan Heffelman \\ February 6^\(th\), 2024 \\ MTH 1240 \\ Sara Jensen}
+\maketitle
+\begin{enumerate}
+    \item[\textbf{2.3  }]  Without changing their meanings, convert each of the following sentences into a sentence having the form ``If $P$, then $Q$''.
+    \begin{enumerate}
+        \item[\textbf{\#2.}] For a function to be continuous, it is sufficient that it is differentiable.
+        \begin{enumerate}
+            \item[1.] If $P$ is ``a function is differentiable''
+            \item[2.] and $Q$ is ``a function is continuous''
+            \item[3.] then $P\Rightarrow Q$.
+        \end{enumerate}
+        \item[\textbf{\#4.}] A function is rational if it is a polynomial.
+        \begin{enumerate}
+            \item[1.] If $P$ is ``a function is a polynomial'',
+            \item[2.] and $Q$ is ``it is rational'',
+            \item[3.] then $P\Rightarrow Q$.
+        \end{enumerate}
+        \item[\textbf{\#5.}] An integer is divisible by 8 only if it is divisible by 4.
+        \begin{enumerate}
+            \item[1. ] If $P$ is ``A number is divisible by 8''
+            \item[2. ] and $Q$ is ``the number is divisible by 4''
+            \item[3. ] then $P \Rightarrow Q$.
+            \item[Note: ] This happens to work in this case, but rearranging the logic like this doesn't work in all cases.
+        \end{enumerate}
+        \\
+    \end{enumerate}
+    \item[\textbf{2.5  }]
+    \begin{enumerate}
+        \item[\textbf{\#2.}]
+        \begin{tabular}{|c|c|c|}
+            \hline
+            $Q$ & $R$ & $(Q\lor R)\Leftrightarrow (R\land Q)$\\
+            \hline
+            T & T & T \\
+            \hline
+            T & F & F \\
+            \hline
+            F & T & F \\
+            \hline
+            F & F & T \\
+            \hline
+        \end{tabular}
+        \\ \\
+        \item[\textbf{\#10.}] $P$ and $Q$ are True, while $R$ and $S$ are False. In order for the statement to be false the consequent must be false while the antecedent must be true, for the consequent to be false $R$ and $S$ must be false. Once you know that, for the antecedent to be true $P$ and $Q$ must be true.
+    \end{enumerate}
+
+    \item[\textbf{2.6  }]
+    \begin{enumerate}
+        \item[]
+        \item[\textbf{\#2.}]
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            $P$ & $Q$ & $R$ & $P\lor (Q\land R)$ & $(P\lor Q)\land (P\lor R)$\\
+            \hline
+            T & T & T & T & T\\ 
+            \hline
+            T & T & F & T & T\\ 
+            \hline
+            T & F & T & T & T\\ 
+            \hline
+            T & F & F & T & T\\
+            \hline
+            F & T & T & T & T\\
+            \hline
+            F & T & F & F & F\\
+            \hline
+            F & F & T & F & F\\
+            \hline
+            F & F & F & F & F\\
+            \hline
+        \end{tabular}
+        \\
+        \item[\textbf{\#12.}] The statements are logically equivalent. \\
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            $P$ & $Q$ & $\sim (P\Rightarrow Q)$ & $P\land \sim Q$\\
+            \hline
+            T & T & F & F \\
+            \hline
+            T & F & T & T \\
+            \hline
+            F & T & F & F \\ 
+            \hline
+            F & F & F & F \\
+            \hline
+        \end{tabular}
+    \end{enumerate}
+    \\ \\
+    \item[\textbf{Witno:  }] \\
+    \begin{enumerate}
+    \item[]
+        \item[\textbf{2.6 (c)}]
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+        $p$ & $q$ & $r$ & $((p \bigoplus q) \bigoplus r)$\\
+        \hline
+        T & T & T & T \\
+        \hline
+        T & T & F & F \\
+        \hline
+        T & F & T & F \\
+        \hline
+        T & F & F & T \\
+        \hline
+        F & T & T & F \\
+        \hline
+        F & T & F & T \\
+        \hline
+        F & F & T & T \\
+        \hline
+        F & F & F & F \\
+        \hline
+    \end{tabular}
+    \end{enumerate}
+    \item[\textbf{2.14}]
+    \item[] \textbf{c}, $(\sim p \Leftrightarrow \sim q) \neq (p \bigoplus q)$
+    
+    
+\end{enumerate}
+
+\end{document}

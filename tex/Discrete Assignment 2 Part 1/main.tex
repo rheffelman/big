@@ -1,0 +1,85 @@
+\documentclass[16pt]{article}
+\usepackage[margin=0.7in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,graphicx,mathtools,tikz,hyperref, enumitem}
+\usetikzlibrary{positioning}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cx}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\hypersetup{colorlinks, linkcolor=blue}
+
+\newcounter{itemnumber}
+
+\begin{document}
+\large
+\date{}
+\title{\Large Assignment 3 \\ Ryan Heffelman \\ February 10^\(th\), 2024 \\ MTH 1240 \\ Sara Jensen}
+\maketitle
+\begin{enumerate}
+    \item[\textbf{2.9  }]  Translate each of the following sentences into symbolic logic.
+    \begin{enumerate}
+        \item[\textbf{\#7.}] There exists a real number $a$ for which $a + x = x$ for every real number x.
+        \begin{enumerate}
+            \item[A: ] $\forall x \in \textbb{R}, \exists a \in \textbb{R} \vert a + x = x$
+        \end{enumerate}
+        \item[\textbf{\#8.}] I don't eat anything that has a face.
+        \begin{enumerate}
+            \item[1.] If $P$ is the set of things that have a face,
+            \item[2.] and $Q$ evaluates to true when I eat something and to false when I don't eat something,
+            \item[3.] then $(\forall x \in P) \Rightarrow (Q \equiv F)$
+        \end{enumerate}
+        \item[\textbf{\#9.}] If $x$ is a rational number and $x \neq 0$ then $\tan(x)$ is not a rational number.
+        \begin{enumerate}
+            \item[A: ] $(x \in \mathbb{Q} \land x \neq 0) \Rightarrow (\tan(x) \notin \mathbb{Q})$
+        \end{enumerate}
+    \end{enumerate}
+    \item[\textbf{2.10  }] Negate the following sentences.
+    \begin{enumerate}
+        \item[\#1.] The number x is not positive, and the number y is positive.
+        \item[\#6.] There does not exist a real number $a$ for which $a + x = x$ for every real number $x$.
+        \item[\#7.] I eat anything that has a face.
+        \item[\#8.] ($x$ is rational $\land$ $x \neq 0$) $\land \tan(x)$ is a rational number. 
+    \end{enumerate}
+    \item[\textbf{Carroll}]
+    \begin{enumerate}
+        \item[1.] $\sim P \Rightarrow \sim V$
+        \item[2.] $R \Rightarrow T$
+        \item[3.] $P \Rightarrow S$
+        \item[4.] $\sim R \Rightarrow \sim U$
+        \item[5.] $T \Rightarrow V$
+    \end{enumerate}
+    \begin{enumerate}
+        \item[a)] From 2 and 5 we get that all wine drinkers can be trusted.
+        \item[b)] From 4 we get that all pawnbrokers are wine drinkers.
+        \item[c)] From a and b we get that all pawnbrokers can be trusted.
+        \item[d)] From 1 and c if $V$ is true then $P$ must be true, so all pawnbrokers keep their promises.
+        \item[e)] From 3 and d all pawnbrokers are honest.
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}

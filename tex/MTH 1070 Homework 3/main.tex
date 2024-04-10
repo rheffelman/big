@@ -1,0 +1,61 @@
+\documentclass[16pt]{article}
+\usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,graphicx,mathtools,tikz,hyperref, enumitem}
+\usetikzlibrary{positioning}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cx}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\hypersetup{colorlinks, linkcolor=blue}
+
+\begin{document}
+\Large
+\date{}
+\title{\LARGE MTH 1070 Homework 3}
+\author{\LARGE Ryan Heffelman\\\LARGE Aaron Trautwein \\\LARGE 
+MTH 1070 \\\LARGE Functions, Analysis, and Graphs. \\\LARGE January \(8^{th}\) 2024} 
+\maketitle
+
+\section{Functions: }
+\begin{enumerate}
+    \item \(f\): [2, \(\infty\))\(\mapsto\)$\mathbb{R}$. \(f\)(x) = \(\sqrt{x - 2}\).
+    \begin{enumerate}
+        \item This function is injective.
+        \item This function is not surjective, its range is [2, \(\infty\)) whereas C = $\mathbb{R}$ therefore C \(\neq\) the range.
+    \end{enumerate}
+    \item \(g\): $\mathbb{R}$\(\mapsto\)$\mathbb{R}$. \(g\)(x) = 2x\(^6\).
+    \begin{enumerate}
+        \item This function is not injective as per the horizontal line test.
+        \item I believe this function is surjective, its range should be in theory equivalent to the Real Numbers, as its range should stretch infinitely into both the negative and positive numbers, although at an incredibly slow rate.
+    \end{enumerate}
+    \item \(h: \mathbb{R}\mapsto\mathbb{R}\). \(h\)(x) = 5x + 4.
+    \begin{enumerate}
+        \item This function is bijective! Both injective and surjective.
+    \end{enumerate}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,83 @@
+\documentclass[16pt]{article}
+\usepackage[margin=0.7in]{geometry} 
+\usepackage{amsmath, amsthm, amssymb, mathrsfs, graphicx, mathtools, tikz, hyperref, enumitem}
+\usetikzlibrary{positioning}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cx}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\hypersetup{colorlinks, linkcolor=blue}
+
+\newcounter{itemnumber}
+
+\begin{document}
+\large
+\date{}
+\title{\Large Assignment 4 Part 2 \\ Ryan Heffelman \\ February 28^\(th\), 2024 \\ MTH 1240 \\ Sara Jensen}
+\maketitle
+\begin{enumerate}
+    \item[\textbf{1.}] Suppose $x$ and $y$ are integers. If $x$ and $y$ are odd then $xy$ is odd.
+    \item[\textbf{def-}] An integer $n$ is odd if $n = 2a + 1$ for some integer a.
+    \item[\textbf{Proof:}] Assume $x$ and $y$ are odd. So $x = 2a + 1$ and $y = 2b + 1$ as per the definition of an odd number. So $x \cdot y = (2a + 1) \cdot (2b + 1)$. Expanding the expression we have \\$x \cdot y = 4ab + 2a + 2b + 1$ \\= $2(2ab + a + b) + 1$ \\  If we rewrite this expression substituting $2ab + a + b$ with a new variable $c$ where $c \in \mathbb{Z}$ we get $2c + 1$. Note that $(2ab + a + b) \in \mathbb{Z}$ because the integers are closed under multiplication and addition, so it is possible to rewrite it this way. Therefore, $xy$ where $x$ and $y$ are odd is exactly equivalent to the definition of an odd number, because it can be rewritten in the form $xy = 2c + 1$. \square
+\end{enumerate}
+\\ \\
+\begin{enumerate}
+    \item[\textbf{2.}] Suppose that $A \subseteq B$. Prove that $A \oplus B = B - A$
+    \item[\textbf{def-}] The set $A$ is a subset of a set $B$ if all elements of $A$ are also elements of $B$.
+    \item[\textbf{Proof:}] Let $c$ be an abstract element in $U$ where $(A \cup B) \in U$.\\
+    We get the following truth table regarding $c$'s membership to $A$, $B$, $A \oplus B$, and $B - A$.
+    
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    $c \in A$ & $c \in B$ & $c \in (A \oplus B)$ & $c \in (B - A)$ \\
+    \hline
+    $T$ & $T$ & $F$ & $F$ \\
+    \hline
+    $T$ & $F$ & $T$ & $F$ \\
+    \hline
+    $F$ & $T$ & $T$ & $T$ \\
+    \hline
+    $F$ & $F$ & $F$ & $F$ \\
+    \hline
+    \end{tabular}
+    \item[] In this table there is one row where the truth values of $c \in (A \oplus B)$ and $c \in (B - A)$ are not equivalent. In this row $c \in A \equiv T$ and $c \in B \equiv F$. This row is impossible per the definition of a subset, $c$ cannot be an element of $A$ and not be an element of $B$ because all elements in $A$ must be in $B$. \\Here is a table with all \textbf{possible} scenarios:\\
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    $c \in A$ & $c \in B$ & $c \in (A \oplus B)$ & $c \in (B - A)$ \\
+    \hline
+    $T$ & $T$ & $F$ & $F$ \\
+    \hline
+    $F$ & $T$ & $T$ & $T$ \\
+    \hline
+    $F$ & $F$ & $F$ & $F$ \\
+    \hline
+    \end{tabular}
+    \item[] As you can see, the truth values of $c \in (A \oplus B)$ and $c \in (B - A)$ are all equivalent in each row for the abstract element $c$. Therefore $A \oplus B = B - A$ where $A \subseteq B$. \square
+\end{enumerate}
+
+\end{document}

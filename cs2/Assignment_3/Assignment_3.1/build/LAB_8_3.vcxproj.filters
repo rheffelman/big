@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ryanh\Documents\CS2\LAB_8\LAB_8.3\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ryanh\Documents\CS2\LAB_8\LAB_8.3\Dictionary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\ryanh\Documents\CS2\LAB_8\LAB_8.3\Dictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ryanh\Documents\CS2\LAB_8\LAB_8.3\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{094FCD3C-C999-30E2-9239-43894205E575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E08190D9-4220-3CB9-B063-A79A70BB6C6F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

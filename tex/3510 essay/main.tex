@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title: SOP LaTeX Template
+%% Author: Soonho Kong / soonhok@cs.cmu.edu
+%% Created: 2012-11-12
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Requirement:
+%%     You need to have the `Adobe Caslon Pro` font family.
+%%     For more information, please visit:
+%%     http://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-US&event=displayFontPackage&code=1712
+%%
+%% How to Compile:
+%%     $ xelatex main.tex
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[letterpaper,margin=0.5in,noheadfoot]{geometry}
+\usepackage{fontspec, color, enumerate, sectsty}
+\usepackage[normalem]{ulem}
+\usepackage{setspace}
+\setstretch{1.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      YOUR INFORMATION
+%
+%      PLEASE EDIT THE FOLLOWING LINES ACCORDINGLY!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\soptitle}{Computer Organization Essay}
+\newcommand{\yourname}{Ryan Heffelman}
+\newcommand{\youremail}{rheffelman@carthage.edu}
+
+%% FONTS SETUP
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Path = fonts/, Ligatures={Common}]{adobe_caslon_pro}
+\setmonofont[Path = fonts/, Scale=0.8]{monaco}
+\setsansfont[Path = fonts/, Scale=0.9]{Optima-Regular}
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&~{}}}
+\usepackage[bookmarks, colorlinks, breaklinks,
+pdftitle={\yourname - \soptitle},pdfauthor={\yourname}, unicode]{hyperref}
+\hypersetup{linkcolor=magneta,citecolor=magenta,filecolor=magenta,urlcolor=[named]{WildStrawberry}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Title and Author Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}{\huge \scshape \soptitle}\end{center}
+\begin{center}\vspace{0.2em} {\Large \yourname\\}
+  {\youremail}\end{center}
+
+\section*{Why I'm ``Worthy'' of Computer Science.}
+
+\paragraph{}
+
+I mean no disrespect but Computer Science is only ``your'' field in the same sense that it is my field, or my fathers field, or my sisters field, or several of my friend's fields. It is only ``your'' field in the sense that you're in it, not that you own it or have some kind of tyrannical control over it, therefore it is MY field in the same exact sense. So now I ask you, what makes YOU think you're worthy of joining MY field. My worth isn't defined by a professor. Frankly I find this essay prompt quite ridiculous, I'm here to learn, not to justify my mere desire to learn. It's like if I walked in a store to buy an apple and the cashier told me I must explain to him why I am buying the apple or he'll charge me an extra 50 cents.
+
+\paragraph{}
+
+Whether or not I'm ``worthy'' depends on exactly what you mean. I'm currently on the lower end of the computer science competence hierarchy, but so is everyone else in the class, why would anyone take a class they're overqualified for? Worthiness is defined as the quality of being good enough or being suitable. So good enough for what? For... Computer Science? Currently, I'm worthy of completing some tasks in computer science, and I'm not worthy of completing others. So are you. So is my 90 year old Grandma. My goal in this class and my education as a whole is to be worthy of completing an increasingly larger set of tasks until I reach the point where I can do enough that I become a highly valuable person, contributing a great deal to society.
+
+\end{document}

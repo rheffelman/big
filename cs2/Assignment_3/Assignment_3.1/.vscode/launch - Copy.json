@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            //"symbolSearchPath": "",
+            "request": "launch",
+            "windows": {
+            "MImode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            },
+            "program": "C:\\Users\\ryanh\\Documents\\CS2\\LAB_8\\LAB_8.3\\myprogram.exe",
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            //"console": "t",
+            "console": "newExternalWindow",
+            "internalConsoleOptions": "openOnSessionStart",
+            "args": []
+        }
+    ]
+}

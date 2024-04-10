@@ -1,0 +1,104 @@
+\documentclass[16pt]{article}
+\usepackage[margin=0.7in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,graphicx,mathtools,tikz,hyperref, enumitem}
+\usetikzlibrary{positioning}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cx}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\hypersetup{colorlinks, linkcolor=blue}
+
+\newcounter{itemnumber}
+
+\begin{document}
+\large
+\date{}
+\author{}
+\title{\Large Assignment 1 \\ Ryan Heffelman \\ February 3rd, 2024 \\ MTH 1240 \\ Sara Jensen}
+\maketitle
+
+\begin{enumerate}
+    \item[$\textbf{2.1  }$]  
+    \begin{enumerate}
+        \item[\textbf{\#1.}] Every real number is an even integer.
+        \begin{itemize}
+            \item A false statement.
+        \end{itemize}
+        \item[\textbf{\#9.}] $\cos x = -1$.
+        \begin{itemize}
+            \item Not a statement.
+            \item For example: true when \(x = \pi\), false when \(x = 2\pi\).
+        \end{itemize}
+        \item[\textbf{\#13.}] Either $x$ is a multiple of 7, or it is not.
+        \begin{itemize}
+            \item A tautology.
+            \item \(P\) \(\oplus\)  \(!P = T\) 
+        \end{itemize}
+    \end{enumerate}
+    \item[\textbf{2.2  }]
+    \begin{enumerate}
+        \item[\textbf{\#1.}] The number 8 is both even and a power of 2.
+        \begin{enumerate}
+            \item[1.] If $P$ is ``8 is even'',
+            \item[2.] and $Q$ is ``8 is a power of 2'',
+            \item[3.] then \(P \land Q\).
+        \end{enumerate}
+        \item[\textbf{\#8.}] At least one of the numbers $x$ and $y$ equals 0.
+        \begin{enumerate}
+            \item[1.] If $P$ is ``$x$ = 0'',
+            \item[2.] and $Q$ is ``$y$ = 0'',
+            \item[3.] then \(P \lor Q\).
+        \end{enumerate}
+    \end{enumerate}
+    \\
+    \item[\textbf{2.3  }]
+    \begin{tabular}{ |c|c|c|c|c|c|} 
+        \hline
+        $P$ & $Q$ & $R$ & $\sim (P\lor Q)\lor (\sim P)$ & $P \lor (Q \land \sim R)$ & $\sim (\sim P \lor \sim Q)$\\
+        \hline
+        T & T & T & F & T & T\\ 
+        \hline
+        T & T & F & F & T & T\\ 
+        \hline
+        T & F & T & F & T & F\\ 
+        \hline
+        T & F & F & F & T & F\\
+        \hline
+        F & T & T & T & F & F\\
+        \hline
+        F & T & F & T & T & F\\
+        \hline
+        F & F & T & T & F & F\\
+        \hline
+        F & F & F & T & F & F\\
+        \hline
+    \end{tabular}
+    
+\end{enumerate}
+
+\end{document}

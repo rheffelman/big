@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+
+%Packages
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage[leftmargin = 1in, rightmargin = 0in, vskip = 0in]{quoting}
+\usepackage{microtype}
+
+%Bibliography
+	%\usepackage[style=mla, backend=bibtex]{biblatex}
+	%\addbibresource{<file>.bib}
+
+%Block Quote Spacing (\doublespaced or \singlespaced)
+	\newcommand{\blockquotespacing}{\doublespaced}
+    
+%The blockwuote environment has two options, \poetry or \prose (it defaults to \prose).
+%If your prose blockquote has multiple paragraphs, then begin the environments as you would would a new paragraph (i.e. with an empty line between the text and the environment).
+%This will tell blockquote to indent the first line of each paragraph in your block a further .25 inches.
+
+%Essay Header
+	\pagestyle{myheadings}
+	\markright{\hfill \emph{Last }}
+
+%FONTS
+	%XeLaTeX: Times New Roman
+		\usepackage{fontspec}
+		\setmainfont[Numbers={Proportional}, Ligatures={TeX, Rare}]{Times New Roman}
+		
+	%pdfLaTeX: TeX Gyre Termes
+		%\usepackage{tgtermes}
+		%\usepackage[T1]{fontenc}
+
+%Defining the blockquote Environment
+\newcommand{\prose}{.25in}
+\newcommand{\poetry}{0in}
+\newcommand{\singlespaced}{\setstretch{1}\vspace{\baselineskip}}
+\newcommand{\doublespaced}{}
+\newenvironment{blockquote}[1][\prose]{\setlength{\parindent}{#1}\begin{quoting}\blockquotespacing}{\end{quoting}}
+
+\begin{document}
+\setstretch{2}
+\raggedright
+
+%Essay Heading
+	First Last \\ Teacher \\ Class \\ \today
+
+%Title
+	\centerline{Title}
+    
+\setlength{\parindent}{.5in}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate feugiat arcu sed mattis. Sed ac metus eu metus vestibulum mattis. Curabitur sit amet luctus ipsum. Etiam dictum, nisi id sollicitudin tempor, risus risus dapibus nunc, vel tristique nulla turpis in lectus. Nulla sodales sollicitudin massa, vel feugiat velit viverra et. Mauris ut rutrum erat. Maecenas hendrerit porttitor rutrum. Ut cursus lacinia urna sit amet pulvinar. 
+
+Nam dapibus lacus eu quam dignissim dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc pellentesque at nulla ac finibus. Aenean commodo diam a sapien suscipit, quis aliquam arcu aliquam:
+\begin{blockquote}[\poetry]
+Cras justo massa, condimentum in nulla eget, \\
+pharetra consequat ligula. \\
+In tempor mi ut placerat malesuada. \\
+Morbi id orci urna.
+\end{blockquote}
+Raesent sit amet leo non ligula vehicula semper. Nulla quis leo nulla. Donec vel sapien ac nulla lobortis blandit sit amet ac mi. Sed molestie non arcu et iaculis. Morbi consequat sem non imperdiet tincidunt. Mauris vel ipsum vel velit dictum condimentum ac eget metus. Nam dictum lectus eget quam tincidunt posuere. Aenean ante nunc, sagittis nec lorem in, tincidunt tincidunt risus. Class aptent ta.
+
+%\printbibliography[heading = none]
+\end{document}
+

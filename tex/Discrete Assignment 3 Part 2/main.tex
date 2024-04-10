@@ -1,0 +1,89 @@
+\documentclass[16pt]{article}
+\usepackage[margin=0.7in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,graphicx,mathtools,tikz,hyperref, enumitem, tikz, venndiagram}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{venndiagram}[2018/06/07 v1.2 (NLCT) Venn diagrams]
+\RequirePackage{xkeyval}
+\RequirePackage{tikz}
+\RequirePackage{etoolbox}
+\usetikzlibrary{positioning}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cx}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\hypersetup{colorlinks, linkcolor=blue}
+
+\newcounter{itemnumber}
+
+\begin{document}
+\large
+\date{}
+\title{\Large Assignment 3 Part 2 \\ Ryan Heffelman \\ February 16^\(th\), 2024 \\ MTH 1240 \\ Sara Jensen}
+\maketitle
+\begin{enumerate}
+    \item[\textbf{1.6}]
+    \item[]
+    \begin{enumerate}
+        \item[\#1]
+        \item[]
+        \begin{enumerate}
+            \item[(d)] $A \cup \overline{A} = U$
+            \item[(e)] $A - \overline{A} = A$
+            \item[(f)] $A - \overline{B} = \{4, 6\}$
+            \item[(g)] $\overline{A} - \overline{B} = \{5, 8\}$
+            \item[(h)] $\overline{A} \cap B = \{5, 8\}$
+            \item[(i)] $\overline{\overline{A} \cap B} = \{0, 1, 2, 3, 4, 6, 7, 9, 10\}$ 
+        \end{enumerate}
+    \end{enumerate}
+    \item[\textbf{1.7}]
+    \item[]
+    \begin{enumerate}
+        \item[\textbf{\#4}] $(A \cup B) - C$ \\
+        \begin{venndiagram3sets}
+        \fillANotC
+        \fillBNotC
+        \end{venndiagram3sets}
+
+        \item[\textbf{\#6}] $A \cap (B \cup C)$ \\
+        \begin{venndiagram3sets}
+        \fillACapC
+        \fillACapB
+        \end{venndiagram3sets}
+        \item[] $(A \cap B) \cup (A \cap C)$ \\
+        \begin{venndiagram3sets}
+        \fillACapC
+        \fillACapB
+        \end{venndiagram3sets}
+        \item[] Yes, they look to be equivalent. \\
+        \item[\textbf{\#13}] $(A \cup B \cup C) - (A \cap B \cap C)$
+        \item[\textbf{\#14}] $(A - (B \cup C)) \cup (A \cap B \cap C)$ 
+    \end{enumerate}
+    
+\end{enumerate}
+
+\end{document}

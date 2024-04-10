@@ -1,0 +1,139 @@
+\documentclass[16pt]{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath, amsthm, amssymb, mathrsfs, graphicx, mathtools, tikz, hyperref, enumitem, setspace}
+\setstretch{1.2}
+\usetikzlibrary{positioning}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cx}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\hypersetup{colorlinks, linkcolor=blue}
+
+\begin{document}
+\large
+\date{}
+\title{\Large Assignment 6 \\ Ryan Heffelman \\ April 8^\(th\), 2024 \\ MTH 1240 \\ Sara Jensen}
+\maketitle
+
+\section{\textbf{Exercise 1.1.}}
+    \begin{enumerate}
+        \item[a)] \(1101111_2\)
+        \\ \(= 2^6 + 2^5 + 2^3 + 2^2 + 2^1 + 2^0\)
+        \\ \(= 64 + 32 + 8 + 4 + 2 + 1\)
+        \\ \(= 111_\(10\)\)
+
+        \item[b)] \(1110111_2\)
+        \\ \(= 2^6 + 2^5 + 2^4 + 2^2 + 2^1 + 2^0\)
+        \\ \(= 64 + 32 + 16 + 4 + 2 + 1\)
+        \\ \(= 119_\(10\)\)
+
+        \item[c)] \(100000001_2\)
+        \\ \(= 2^8 + 2^0\)
+        \\ \(= 256 + 1\)
+        \\ \(= 257_\(10\)\)
+
+        \item[d)] \(1101111000_2\)
+        \\ \(= 2^9 + 2^8 + 2^6 + 2^5 + 2^4 + 2^3\)
+        \\ \(= 512 + 256 + 64 + 32 + 16 + 8\)
+        \\ \(= 888_\(10\)\)
+    \end{enumerate}
+
+\section{\textbf{Exercise 1.6.}}
+    \begin{enumerate}
+        \item[a)] \(999_\(10\)\)
+        \\ \(999 \div 16 = 62\) with remainder 7
+        \\ \(62 \div 16 = 3\) with remainder 14
+        \\ \(3 \div 16 = 0\) with remainder 3
+        \\ 3, 14, 7 is 3E7$_\(16\)$
+
+        \item[b)] \(10001_\(10\)\)
+        \\ \(10001 \div 16 = 625\) with remainder 1
+        \\ \(625 \div 16 = 39\) with remainder 1
+        \\ \(39 \div 16 = 2\) with remainder 7
+        \\ \(2 \div 16 = 0\) with remainder 2
+        \\ 2, 7, 1, 1 is 2711$_\(16\)$
+
+        \item[c)] \(98765_\(10\)\)
+        \\ \(98765 \div 16 = 6172\) with remainder 13
+        \\ \(6172 \div 16 = 385\) with remainder 12
+        \\ \(385 \div 16 = 24\) with remainder 1
+        \\ \(24 \div 16 = 1\) with remainder 8
+        \\ \(1 \div 16 = 0\) with remainder 1
+        \\ 1, 8, 1, 12, 13 is 181CD$_\(16\)$
+
+        \item[d)] \(522958_\(10\)\)
+        \\ \(522958 \div 16 = 32684\) with remainder 14
+        \\ \(32684 \div 16 = 2042\) with remainder 12
+        \\ \(2042 \div 16 = 127\) with remainder 10
+        \\ \(127 \div 16 = 7\) with remainder 15
+        \\ \(7 \div 16 = 0\) with remainder 7
+        \\ 7, 15, 10, 12, 14 is 7FACE$_\(16\)$
+    \end{enumerate}
+    
+\section{\textbf{Exercise 1.12.}}
+    \begin{enumerate}
+        \item[a)] \(1101111_2\)
+        \\ 1 101 111
+        \\ 1   5   7
+        \\ \(1101111_2\) = \(157_8\)
+
+        \item[b)] \(10111001011_2\)
+        \\ 10 111 001 011
+        \\ 2 7 1 3
+        \\ \(10111001011_2\) = \(2713_8\)
+
+        \item[c)] \(264_8\)
+        \\ 2 6 4
+        \\ 010 110 100
+        \\ 10110100
+        \\ \(264_8\) = \(10110100_2\)
+
+        \item[d)] \(10101_8\) making this one base 8 is a mean trick.
+        \\ 1 0 1 0 1
+        \\ 001 000 001 000 001
+        \\ \(10101_8\) = \(001000001000001_2\)        
+    \end{enumerate}
+
+\section{\textbf{Test 1.14.}}
+     \\ \(1231231_4\)
+     \\ \(= 1 \cdot 4^6 + 2 \cdot 4^5 + 3 \cdot 4^4 + 1 \cdot 4^3 + 2 \cdot 4^2 + 3 \cdot 4^1 + 1 \cdot 4^0\)
+     \\ \(= 4096 + 2048 + 768 + 64 + 32 + 12 + 1\)
+     \\ \(= 7021\)
+     \\ so \(1231231_4\) = \(7021_\(10\)\)
+     \\
+     \\ Now 7021 from decimal to hexadecimal:
+     \\ \(7021 \div 16 = 438\) with remainder 13
+     \\ \(438 \div 16 = 27\) with remainder 6
+     \\ \(27 \div 16 = 1\) with remainder 11
+     \\ \(1 \div 16 = 0\) with remainder 1
+     \\ 1, 11, 6, 13
+     \\ \(7021_\(10\)\) = \(1$B$6$D$_\(16\)\)
+     \\
+     \\ So my answer is b: \(1231231_4\) = \(1$B$6$D$_\(16\)\).
+     \\ There's probably a smarter way to do this, but I'm too tired.
+\end{document}

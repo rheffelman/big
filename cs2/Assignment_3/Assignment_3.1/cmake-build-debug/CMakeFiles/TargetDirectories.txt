@@ -1,0 +1,3 @@
+C:/Users/ryanh/Documents/CS2/LAB_8/LAB_8.1/cmake-build-debug/CMakeFiles/LAB_8_1.dir
+C:/Users/ryanh/Documents/CS2/LAB_8/LAB_8.1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ryanh/Documents/CS2/LAB_8/LAB_8.1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

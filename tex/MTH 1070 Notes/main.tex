@@ -1,0 +1,279 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,graphicx,mathtools,tikz,hyperref, enumitem}
+\usetikzlibrary{positioning}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cx}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\hypersetup{colorlinks, linkcolor=blue}
+
+\begin{document}
+\date{January \(4^{th}\) 2024}
+\title{Pre-Calc Notes}
+\author{Ryan Heffelman\\Aaron Trautwein \\
+MTH 1070 \\Functions, Analysis, and Graphs.} 
+\maketitle
+
+\section{Day 1, 1-4-2024}
+\subsection{Contact Info}
+\begin{enumerate}
+
+    \item Office Phone: (262)-551-5873
+    
+    \item Home Phone: (262)-551-9915
+    
+    \item Email: atrautwein@carthage.edu
+    
+\end{enumerate}
+\subsection{Notes}
+\begin{enumerate}
+
+    \item $\mathbb{N}$ = Set of natural/counting numbers = \{1, 2, 3, 4, 5, ...\}
+    \item $\mathbb{Z}$ = Set of integers = \{..., -3, -2, -1, 0, 1, 2, 3, ...\}. Z comes from the German word "zahlen", which means "to count"
+    \item $\mathbb{Q}$ = Set of rational numbers = \{\(\frac{p}{q}\): p, q\(\in\)$\mathbb{Z}$ and q \(\neq\) 0\}
+    \item $\mathbb{I}$ = Set of irrational numbers = every real number that is not a rational number = \(\{\sqrt{2}, \frac{\sqrt{3} + 1}{4}, e, \pi, \sqrt{-5}\}\)
+    \item $\mathbb{R}$ = Set of real numbers = every number along real number line
+    \item $\mathbb{C}$ = Set of complex numbers.
+    \item $\mathbb{U}$ = The universal Set, the set that contains all possible elements in the space you are working in.
+    \item $\emptyset$ = The empty set, the set that contains no elements at all.
+    \item The union of two sets A and B, denoted A\(\cup\)B, is the set that contains every element in A combined with every element in B.
+    \item The intersection of two sets A and B, denoted A\(\cap\)B, is the set of elements that appears in both sets.
+    \item The complement of A, denoted A', is the set of all elements in $\mathbb{U}$ that are not in A.
+    \item A -B, or A not B, is the set of elements in A, not in B.
+    
+\end{enumerate}
+\subsection{Assignments}
+\begin{enumerate}
+
+    \item Quiz on Monday 1-8-2024 on Sets. 
+    
+    \item Homework: Memorize, come up with examples of each of the operators. make a venn diagram. a union b, a intersect b, a complement, a -b, venn diagram.
+    
+\end{enumerate}
+\section{Day 2, 1-5-2024}
+\subsection{Definitions:}
+\begin{enumerate}
+
+    \item\textbf{Cartesian Product: } The cartesian product of sets A and B is the set of all ordered 2-tuples with a \(\in\) A and b \(\in\) B, that is denoted by A\(\times\)B. A\(\times\)B = \{(a, b): a \(\in\) A, b \(\in\) B\}
+    \begin{enumerate}\begin{enumerate}
+        \item A = \{1, 2, 3\}, B = \{1, 2\}. A\(\times\)B = \{(1, 1), (1, 2), (2, 1), (2, 2), (3, 1), (3, 2)\}
+    \end{enumerate}\end{enumerate}
+    \item\textbf{Order: }The order or cardinality of a set A, denoted \(\vert\)A\(\vert\) is the number of elements in A.
+    \begin{enumerate}\begin{enumerate}
+        \item A = \{1, 2, 3\} \(\implies\) \(\vert\)A\(\vert\)
+        \item A = \{1, 2, 3, 4\} \(\land\) B = \{5, 6, 7\} \(\implies\) \(\vert\)A\(\vert\)\(\times\)\(\vert\)B\(\vert\) = 12
+    \end{enumerate}\end{enumerate}
+    \item\textbf{Function: }A Function, typically named with a lowercase letter, is a mapping/rule from a set called the domain D to a set called the codomain C that maps each element x in the domain to one element f(x) in the codomain. f: D\(\mapsto\)C.
+    \begin{enumerate}\begin{enumerate}
+        \item \((f(x) = x^2)\) \(\implies\) (D = $\mathbb{R}$ \(\land\) C = $\mathbb{R}$)
+    \end{enumerate}\end{enumerate}
+    \item\textbf{Range: }A functions range R is a set \(\vert\) \(\forall\)x \(\in\) D \(\exists\)y \(\in\) R \(\vert\) \(f(\)x\() =\) y.
+    \begin{enumerate}\begin{enumerate}
+            \item \(f(\)x\()\) = x\(^2\) \(\land\) D(\(f\)) = \{1, 2, 3\} \(\implies\) R(\(f\)) = \{1, 4, 9\)\}
+    \end{enumerate}\end{enumerate}
+    \item\textbf{Injective: }A function \(f\): D\(\mapsto\)C is injective \(\iff\) \(\forall\)\((a, b)\) \(\in\) D, \(a\) \(\neq\) \(b\) \(\implies\) \(f(a)\) \(\neq\) \(f(b)\).
+    \begin{enumerate} \begin{enumerate}
+            \item Injective: \(f(\)x\(\))\) = x
+            \item Injective: \(f(\)x) = x\(^3\)
+            \item Not Injective: \(f(\)x) = y
+            \item Not Injective: \(f(\)x) = a person's name where D$(f)$ = the set of all people. This is true because while people have many different names, some of them share the same name.
+    \end{enumerate}\end{enumerate}
+    \item\textbf{Surjective: }A function \(f\): D\(\mapsto\)C is surjective \(\iff\) \(\forall\)y \(\in\) C \(\exists\)x \(\in\) D \(\vert\) \(f(\)x\()\) = y. (The range of \(f\) = the codomain of \(f\)).
+    \begin{enumerate} \begin{enumerate}
+            \item Surjective: \(f\): D\(\mapsto\)C where D = the set of students at Carthage and C = the set of student IDs at Carthage. \(f(\)x\()\) = the student ID of a given student x.
+            \item Surjective: \(f(\)x\(\))\) = x. D\((f)\) = C\((f)\) = R\((f)\)
+            \item Not Surjective: \(f\)(x) = x\(^2\)
+            \item Not Surjective: \(f\): D\(\mapsto\)C where D = the set of students at Carthage and C = $\mathbb{N}$. \(f(\)x\()\) = the student ID of a given student x. The set of valid student IDs at carthage is a subset of the natural numbers.
+    \end{enumerate}\end{enumerate}
+\end{enumerate}
+\subsection{Assignments}
+\begin{enumerate}
+    \item Quiz on monday there will be 2 questions. Question 1: Define and give an example of the given terms. Question 2:  given the sets A, B, C and the universal set U, find the following.
+    \begin{enumerate}
+        \item What is a set? (capital letters, \{\})
+        \item What is an element? (\(\in\))
+        \item What is the empty set or null set? (\(\emptyset\))
+        \item What is the union of two sets? (\(\cup\))
+        \item What is the intersection of two sets? (\(\cap\))
+        \item What is the not operation? (-)
+        \item What's the complement of a set? (')
+        \item Natural numbers? ($\mathbb{N}$)
+        \item Integers? ($\mathbb{Z}$)
+        \item Rational Numbers? ($\mathbb{Q}$)
+        \item Irrational numbers? ($\mathbb{I}$)
+        \item Real Numbers? ($\mathbb{R}$)
+        \item Complex Numbers? ($\mathbb{C}$)
+    \end{enumerate}
+    \item Study for Quiz, -definitions/examples. -problems
+    \item Do the Cartesian product of AxB for A = \{1, 2, 3, 4\}, B = \{1, 2, 3\}, and compute \(\vert\) A\(\vert\), \(\vert\)B\(\vert\), and \(\vert\)AxB\(\vert\).
+    \item come up with 2 functions, 1 involving numbers and one not. ask yourself are they injective / surjective?
+\end{enumerate}
+\section{Day 3, 1-8-2024}
+\subsection{General}
+\begin{enumerate}
+    \item \(f\) $\mathbb{R}$\(\mapsto\)$\mathbb{R}$
+\end{enumerate}
+\subsection{Definitions}
+\begin{enumerate}
+    \item\textbf{Bijective: }a function is Bijective if it is Surjective and Injective.
+
+    \item f:D\(\mapsto\)C is 1:1 if and only if whenever a, b \(\in\) D and a \(\neq\) b then \(f\)(a) \neq \(f\)(b).
+
+    \item \textbf{Horizontal Line Test: }If a graph y = \(f\)(x) of a function \(f\)(x) can only be intersected by one or no points using any horizontal line then the function \(f\)(x) is 1:1.
+
+    \item if \(f\)(x) is a 1:1 function, its inverse function \(f^-1\)(x) is the function such that if I (\(f * f^-1\)) = (\(f^-1\)(x)) = x and (\(f^-1 * f\))(x) = \(f^-1\)(\(f\)(x)) = x. i.e. the inverse \(f^-1\)(x) of a function \(f\)(x) should be another function that does the ``opposite'' or ``undoes'' the origial function.
+    \begin{enumerate}
+        \item \(g\)(x) = x\(^2\). g: R\(\mapsto\)R
+    \end{enumerate}
+
+    \item \(f^-1\)(x) = \(\frac{x-3}{2}\) 1. write f(x) = y. 2. switch x with y. 3. solve for y in terms of x, i.e. get y on one side of the equation by itself and on the other side of equation have everything written in terms of x.
+
+    \item a function f: D\(\mapsto\)C is onto if and only if f(D) = range.
+
+    \item f: R\(\mapsto\)R = C \(\neq\) range R. f(x) = x\(^2\). D = $\mathbb{R}$, f(D) = f($$
+
+    \item trig functions are functions applied to angles.
+
+    \item Trigonometric Functions: Defined two ways:
+    \begin{enumerate}
+        \item using right triangles:
+        \begin{enumerate}
+            \item right triangle = triangle with a 90 degree angle
+            \item \(\theta\), opp
+        \end{enumerate}
+        \item using unit circles: -def x2 + y2 = 1 = unit circle = circle of radius 1 centered at the origin
+        \item Sine: y = sine of theta, x = cos of theta, as an angle of the unit circle. 30 = (sqrt(3,2), 1/2) 60 = 1/2, sqrt(5/2)
+        \item Sine: sin(\(\theta\)) \(\rightarrow\) y
+        \item Cosine: cos(\(\theta\)) \(\rightarrow\) x
+        \item tangent: tan(\(\theta\)) = \(\frac{sin(\theta)}{cos(\theta)}\)
+        \item cotangent: cot(\(\theta\)) = \(\frac{cos(\theta)}{sin(\theta)}\)
+        \item cosecant: csc(\(\theta\)) = \(\frac{1}{sin(\theta)}\)
+        \item secant: sec(\(\theta\)) = \(\frac{1}{cos}\)
+    \end{enumerate}
+\end{enumerate}
+\subsection{Homework}
+\begin{enumerate}
+    \item f(x) [2, infinity)\(\mapsto\)R f(x) = sqrt(x - 2)
+    \item g: R->R, g(x) = 2x\(^6\)
+    \item h: R->R, h(x) = 5x + 4.
+    \item 
+\end{enumerate}
+\section{Day 4, 1-9-2024}
+\subsection{General: }
+\begin{enumerate}
+    \item Plot[Sin[x], \{x, 0, 2 Pi\}]
+    \item Solve[]
+    \item Degrees to Radians: \(\frac{d\pi}{180}\) = radians
+    \item Radians to Degrees: \(\frac{r180}{\pi}\) = degrees
+\end{enumerate}
+\subsection{Definitions: }
+\begin{enumerate}
+    \item 
+\end{enumerate}
+\subsection{Homework: }
+\item Monday, January \(15^th\) is Martin Luther King Day. We will not have class so we can participate in the planned MLK events on campus. Instead on that day, be ready to give a short report on any non-Western or female mathematician of your choice on Tuesday, January \(15^th\). -location -time period -education -what are they known for mathematically.
+\begin{enumerate}
+    \item Quiz Tomorrow:
+    \begin{enumerate}
+        \item Define and give an example of the given term
+        \item Evaluate an angle for a particular trig function.
+        \item Determine if a given function is 1:1, onto, both, or neither.
+        \begin{enumerate}
+            \item function: a function f takes a value x in the domain D and maps it to another value f(x) in C.
+            \item domain
+            \item codomain
+            \item range
+            \item sin(\(\theta\)) = y = \(\frac{opp}{hyp}\)
+            \item cos(\(\theta\)) = x = \(\frac{adj}{hyp}\)
+            \item tan(\(\theta\)) = \(\frac{sin}{cos}\) = \(\frac{opp}{adj}\)
+            \item cot(\(\theta\)) = \(\frac{cos}{sin}\) = \(\frac{adj}{opp}\)
+            \item sec(\(\theta\)) = \(\frac{1}{cos}\) = \(\frac{hyp}{adj}\)
+            \item csc(\(\theta\)) = \(\frac{1}{sin}\) = \(\frac{hyp}{opp}\)
+        \end{enumerate}
+    \end{enumerate}
+    \item look at graphs of what trig functions look like
+\end{enumerate}
+\section{Day 5, 1-1-2024}
+\subsection{General: }
+\begin{enumerate}
+    \item asmitope? asymptotes
+    \item 
+\end{enumerate}
+\subsection{Definitions: }
+\begin{enumerate}
+    \item Trigonometric Functions
+    \begin{enumerate}
+        \item Definitions through standard right triangles, or unit circle.
+        \item Graphs
+        \item Evaluate the trig functions for standard angles.
+        \item identities(relationship between the trig functions and/or right triangles)
+    \end{enumerate}
+    \item Identities from Trig. to Know:
+    \begin{enumerate}
+        \item Unit Circle Definitions of Sine and Cosine.
+        \item Right Triangle Definitions of the trig functions.
+        \item Pythagorean Identities
+        \begin{enumerate}
+            \item \(\sin^2\theta + \cos^2\theta = 1\) = \((\sin\theta^2) + \cos(\theta^2)\)
+            \item \(\tan^4 3\theta = (\tan(3\theta))^4\)
+            \item \(\frac{(\sin\theta)^2}{(\sin\theta)^2} + \frac{(\cos\theta)^2}{(\sin\theta)^2} = \frac{1}{(\sin\theta)^2}, 1 + (\cot\theta)^2 = (\csc\theta^2)\)
+            \item \(\frac{(\sin\theta)^2}{(\cos\theta)^2} + \frac{(\cos\theta)^2}{(\cos\theta)^2} = \frac{1}{(\cos\theta)^2} = \tan^2\theta + 1 = \sec^2\theta\)
+            \item 
+        \end{enumerate}
+        \item Double Angle Identity
+        \begin{enumerate}
+            \item \(\sin^2\theta = \frac{1 - \cos(2\theta)}{2}\)
+            \item \(\cos^2\theta = \frac{1 + \cos(2\theta)}{2} = (\cos\theta)^2\)
+            \item 
+        \end{enumerate}
+        \item Sum/Difference Formulas
+        \begin{enumerate}
+            \item \(\sin(a \pm b) = \sin(a)\cos(b) \pm \cos(a)\sin(b)\)
+            \item \(\cos(a \pm b) = \cos(a)\cos(b) \mp \sin(a)\sin(b)\)
+            \item Ex.1 \(\sin(75\deg) = \sin(30\deg + 45\deg) = \sin(30\deg)\cos(45\deg)+\sin(45\deg)\cos(30\deg)\)
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+\subsection{Assignments: }
+\begin{enumerate}
+    \item Quiz Tomorrow: Draw all trig functions!
+    \item Work on presentation for Tuesday, Jan. 16th. No class on Monday.
+\end{enumerate}
+
+\section{Day 7, 1-17-2024}
+\subsection{Assignments: }
+\begin{enumerate}
+    \item Quiz: computation with logs and exponents, graph exponential function and corresponding log.
+\end{enumerate}
+\section{Day 8, 1-18-2024}
+\subsection{Assignments: }
+\begin{itemize}
+    \item \(\log _4 (80) = 2\frac{a}{a} + a\)
+\end{itemize}
+\end{document} 
