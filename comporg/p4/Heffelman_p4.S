@@ -23,12 +23,12 @@ main:
     mov     x21, 1 // counter 1
     mov     x22, 0 // counter 2
     mov     x28, 0 // binary switch thingy to toggle back in forth between addition and subtraction.
-    ldr     d20, zeroLol // theta in degrees
-    ldr     d21, zeroLol // theta in radians
-    ldr     d22, zeroLol // x^k/k!
-    ldr     d23, zeroLol // theta^i
-    ldr     d24, oneLol // total. starts at 1 because of "first" term.
-    ldr     d25, zeroLol // what cos() says the cosine is
+    ldr     d20, zero // theta in degrees
+    ldr     d21, zero // theta in radians
+    ldr     d22, zero // x^k/k!
+    ldr     d23, zero // theta^i
+    ldr     d24, one // total. starts at 1 because of "first" term.
+    ldr     d25, zero // what cos() says the cosine is
     
     bl      parseInput
     cmp     x0, -1
@@ -39,7 +39,7 @@ main:
     fmul    d21, d1, d20
 
     fmul    d23, d21, d21 // d22 = theta^2
-    ldr     d1, twoLol
+    ldr     d1, two
     fdiv    d22, d23, d1
     fsub    d24, d24, d22
     
@@ -148,9 +148,9 @@ ret
 .data
 
     factorials:     .double     24, 720, 40320, 3628800, 479001600, 87178291200, 20922789888000, 6402373705728000, 2432902008176640000
-    zeroLol:        .double     0.0
-    twoLol:         .double     2
-    oneLol:         .double     1
+    zero:        .double     0.0
+    two:         .double     2
+    one:         .double     1
     piOver180:      .double     0.0174532925199432957692369076848861271
     fmt1:           .asciz      "The cosine of %.4f degrees is %.10f. Error: %.10f\n"
     printFloat:     .asciz      "%0.10f\n"
