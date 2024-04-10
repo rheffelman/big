@@ -1,0 +1,10 @@
+(1) -10
+(2) prints
+(3) last
+(4) nine
+(5) lines.
+(6) Big penalty
+(7) not because it is a very serious error
+(8) but because
+(9) you ought to have seen it.
+(10) Good work otherwise!

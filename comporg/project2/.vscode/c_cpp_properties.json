@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\Users\\ryanh\\AppData\\Local\\R\\win-library\\4.3\\Rcpp\\include\\Rcpp"
+        }
+    ],
+    "version": 4
+}
