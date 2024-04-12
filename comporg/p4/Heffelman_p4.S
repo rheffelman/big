@@ -68,7 +68,7 @@ main:
 
     wrapUp: // computeCosine loop branches to here from its exit condition
         fmov    d0, d21
-        bl      cos 
+        bl      cos
         fmov    d26, d0
 
         // cos() jumbles d20 which was theta in degrees as a double, so I need to
@@ -148,11 +148,11 @@ ret
 .data
 
     factorials:     .double     24, 720, 40320, 3628800, 479001600, 87178291200, 20922789888000, 6402373705728000, 2432902008176640000
-    zero:        .double     0.0
-    two:         .double     2
-    one:         .double     1
-    piOver180:      .double     0.0174532925199432957692369076848861271
-    fmt1:           .asciz      "The cosine of %.4f degrees is %.10f. Error: %.10f\n"
+    zero:           .double     0.0
+    two:            .double     2
+    one:            .double     1
+    piOver180:      .double     0.0174532925199432957692369076848861271344287188854172545609719144
+    fmt1:           .asciz      "The cosine of %0.4f degrees is %0.10f. Error: %0.10f\n"
     printFloat:     .asciz      "%0.10f\n"
     badTerm:        .asciz      "Number of terms is out of range.\n"
     notEnoughArgs:  .asciz      "Two numerical arguments must be given.\n"
