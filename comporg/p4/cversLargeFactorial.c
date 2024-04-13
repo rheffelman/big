@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+double pi = 3.14159265358979323846;
+
+double D2R(double d) {
+    return d * pi / 180.0;
+}
+
+double Factorial(int n) {
+    long long unsigned retval = 1;
+
+    if (n > 0) {
+        while (n > 1) {
+            retval = retval * n--;
+        }
+    }
+    printf("%llu\n", retval);
+    return (double) retval;
+}
+
+double IntegerPower(double b, int e) {
+    double retval = 1.0;
+    if (e > 0) {
+        while (e > 0) {
+            retval = retval * b;
+            e--;
+        }
+    }
+    return retval;
+}
+
+
+int main(int argc, char ** argv) {
+    double cosine = 1.0;
+
+	if (argc != 3) {
+		fprintf(stderr, "Two numerical arguments must be given.\n");
+        return 1;
+	}
+
+	double angle = atof(argv[1]);
+    int terms = atoi(argv[2]);
+
+    if (terms < 1 || terms > 11) {
+        fprintf(stderr, "Number of terms is out of range.\n");
+        return 1;
+    }
+
+    double r_angle = D2R(angle);
+
+    double toggle = -1.0;
+    for (int term = 0, base = 2; term < terms; term++, base += 2) {
+		if (toggle > 0) {
+			
+		} else {
+			
+		}
+		cosine += toggle *
+			   IntegerPower(r_angle, base) / Factorial(base);
+        toggle = toggle * -1;
+	}
+	printf("The cosine of %0.4f degrees is %0.10f. Error: %0.10f\n", angle, cosine, cos(r_angle) - cosine);
+    printf("cvs\n");
+    return 0;
+}

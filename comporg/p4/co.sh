@@ -3,7 +3,7 @@ do
     for ((ii=1; ii<=10; ii++))
     do
         cvsOutput=$(./cvs.exe $i $ii)
-        myOutput=$(./a.out $i $ii)
+        myOutput=$(./p4final.exe $i $ii)
 
         if [ "$cvsOutput" != "$myOutput" ]; then
             echo "Different outputs for x=$i and y=$ii"
