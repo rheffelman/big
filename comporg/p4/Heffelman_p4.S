@@ -4,10 +4,6 @@
 // Wednesday, April 10, 2024
 // Project 4
 
-// My program still gets slightly different answers from your c version program in very specific cases
-// like ./a.out 888.93 9 gives a different result than the cversion.
-// Oh well, I'm not better than the compiler yet.
-
 .text
 .p2align
 .global main
@@ -16,7 +12,7 @@ main:
     stp     x29, x30, [sp, -16]!
     mov     x29, sp
     stp     x19, x20, [sp, -16]!
-    stp     x21, x22, [sp, -16]!
+    stp     x21, x22, [sp, -16]! 
     stp     x27, x28, [sp, -16]!
     stp     d19, d20, [sp, -16]!
     stp     d21, d22, [sp, -16]!
